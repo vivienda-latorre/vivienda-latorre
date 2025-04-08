@@ -1,0 +1,88 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background: white;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background: linear-gradient(to right, #6a1b9a, #8e24aa);
+  padding: 5rem 2rem;
+  text-align: center;
+  color: white;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+h1 {
+  font-size: 3rem;
+}
+.slogan {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #43a047;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+}
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+section h2 {
+  text-align: center;
+  color: #6a1b9a;
+  margin-bottom: 2rem;
+}
+.servicio {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.servicio img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.testimonio-carousel {
+  display: flex;
+  overflow: hidden;
+}
+.testimonio {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+  background: #f3e5f5;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.testimonio img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+}
+form input, form textarea {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+form button {
+  padding: 1rem;
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 12px;
+}

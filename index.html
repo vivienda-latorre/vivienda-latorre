@@ -4,158 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vivienda Latorre</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet"/>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #fff;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(to right, #6a1b9a, #8e24aa);
-      color: white;
-      padding: 5rem 2rem;
-      text-align: center;
-      border-bottom-left-radius: 2rem;
-      border-bottom-right-radius: 2rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    header .slogan {
-      font-size: 1.5rem;
-      font-style: italic;
-      margin-top: 0.5rem;
-    }
-    .btn {
-      background-color: #43a047;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 12px;
-      text-decoration: none;
-      font-size: 1rem;
-      margin-top: 1.5rem;
-      display: inline-block;
-      transition: background 0.3s ease;
-    }
-    .btn:hover { background-color: #388e3c; }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    section h2 {
-      text-align: center;
-      color: #6a1b9a;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-    .servicio {
-      margin-bottom: 4rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .servicio img {
-      width: 100%;
-      max-width: 600px;
-      border-radius: 20px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      margin-bottom: 1rem;
-    }
-    .servicio h3 {
-      margin-bottom: 0.5rem;
-      color: #4a148c;
-      font-size: 1.5rem;
-    }
-    .testimonio-carousel {
-      display: flex;
-      overflow: hidden;
-      position: relative;
-      border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-    .testimonio {
-      flex: 0 0 100%;
-      transition: transform 0.5s ease-in-out;
-      background: #f3e5f5;
-      padding: 3rem 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .testimonio img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-      object-fit: cover;
-    }
-    .testimonio p {
-      font-style: italic;
-      font-size: 1.1rem;
-    }
-    .testimonio strong {
-      color: #6a1b9a;
-      margin-top: 1rem;
-      display: block;
-    }
-    .blog-item {
-      margin-bottom: 2rem;
-      background: #fafafa;
-      padding: 1.5rem;
-      border-radius: 16px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-    .blog-item h3 {
-      color: #6a1b9a;
-      margin-bottom: 0.5rem;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 600px;
-      margin: auto;
-    }
-    form input, form textarea {
-      margin-bottom: 1rem;
-      padding: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 12px;
-      font-size: 1rem;
-    }
-    form button {
-      background-color: #6a1b9a;
-      color: white;
-      padding: 1rem;
-      border: none;
-      border-radius: 12px;
-      font-size: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #777;
-    }
-  </style>
-  <script>
-    let index = 0;
-    function mostrarSiguienteTestimonio() {
-      const testimonios = document.querySelectorAll('.testimonio');
-      testimonios.forEach((t, i) => {
-        t.style.transform = `translateX(-${index * 100}%)`;
-      });
-      index = (index + 1) % testimonios.length;
-    }
-    setInterval(mostrarSiguienteTestimonio, 5000);
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -168,19 +18,29 @@
   <section id="servicios">
     <h2>Portafolio de Servicios</h2>
     <div class="servicio">
-      <img src="https://source.unsplash.com/600x400/?house,money" alt="Servicio 1"/>
+      <img src="https://images.unsplash.com/photo-1600607689458-327d9ac0a48d?auto=format&fit=crop&w=1200&q=80" alt="Crédito Hipotecario"/>
       <h3>Crédito Hipotecario</h3>
-      <p>Compra tu vivienda nueva o usada con las mejores tasas del mercado.</p>
+      <p>Asesoría personalizada para obtener el crédito ideal para tu vivienda nueva o usada.</p>
     </div>
     <div class="servicio">
-      <img src="https://source.unsplash.com/600x400/?apartment" alt="Servicio 2"/>
+      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80" alt="Leasing habitacional"/>
       <h3>Leasing Habitacional</h3>
-      <p>Financiación sin cuota inicial con beneficios tributarios.</p>
+      <p>Alternativa sin cuota inicial para adquirir vivienda con ventajas tributarias.</p>
     </div>
     <div class="servicio">
-      <img src="https://source.unsplash.com/600x400/?loan" alt="Servicio 3"/>
+      <img src="https://images.unsplash.com/photo-1588776814546-4c6f2c7db108?auto=format&fit=crop&w=1200&q=80" alt="Compra de Cartera"/>
       <h3>Compra de Cartera</h3>
-      <p>Unifica tus deudas y mejora tu flujo de caja mensual.</p>
+      <p>Unifica tus deudas hipotecarias con mejores tasas y reduce tu cuota mensual.</p>
+    </div>
+    <div class="servicio">
+      <img src="https://images.unsplash.com/photo-1581093588401-16e7c9acdb09?auto=format&fit=crop&w=1200&q=80" alt="Remodelación"/>
+      <h3>Crédito para Remodelación</h3>
+      <p>Haz realidad ese cambio en tu hogar con financiación respaldada por tu propiedad.</p>
+    </div>
+    <div class="servicio">
+      <img src="https://images.unsplash.com/photo-1615874959474-d609969a5a3b?auto=format&fit=crop&w=1200&q=80" alt="Libre inversión con garantía"/>
+      <h3>Libre Inversión con Garantía</h3>
+      <p>Obtén liquidez para tus proyectos personales usando tu vivienda como respaldo.</p>
     </div>
   </section>
 
@@ -188,14 +48,19 @@
     <h2>Lo que dicen mis clientes</h2>
     <div class="testimonio-carousel">
       <div class="testimonio">
-        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Cliente paisa 1">
+        <img src="https://images.unsplash.com/photo-1590080876432-c3b99de0ea64?auto=format&fit=crop&w=80&q=80" alt="Cliente 1"/>
         <p>"Muy agradecida con Vivienda Latorre. Siempre atenta, clara y con las mejores opciones del mercado."</p>
         <strong>Mariana L.</strong>
       </div>
       <div class="testimonio">
-        <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Cliente paisa 2">
+        <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=80&q=80" alt="Cliente 2"/>
         <p>"Pude unificar mis deudas y ahora tengo una sola cuota mucho más cómoda. Súper recomendado."</p>
         <strong>Julián A.</strong>
+      </div>
+      <div class="testimonio">
+        <img src="https://images.unsplash.com/photo-1587496679742-477c2a8c8e78?auto=format&fit=crop&w=80&q=80" alt="Cliente 3"/>
+        <p>"La asesoría fue muy personalizada, me explicaron todo con calma y con ejemplos claros."</p>
+        <strong>Angela M.</strong>
       </div>
     </div>
   </section>
@@ -204,11 +69,15 @@
     <h2>Tips Financieros</h2>
     <div class="blog-item">
       <h3>¿Qué es un crédito con garantía hipotecaria?</h3>
-      <p>Es un préstamo que usas para libre inversión, pero dejas tu vivienda como garantía.</p>
+      <p>Es un préstamo con tasas más bajas usando tu propiedad como respaldo. Ideal para montos altos.</p>
     </div>
     <div class="blog-item">
       <h3>¿Es mejor comprar o arrendar?</h3>
-      <p>Depende de tus planes. Si tu situación es temporal, arrendar puede ser mejor.</p>
+      <p>Si tus planes son a largo plazo, comprar puede ser la mejor opción. Para cambios constantes, arrienda.</p>
+    </div>
+    <div class="blog-item">
+      <h3>Leasing vs. Crédito Hipotecario</h3>
+      <p>Leasing te da ventajas tributarias, el crédito te da propiedad desde el inicio. Evalúa tu perfil.</p>
     </div>
   </section>
 
@@ -219,18 +88,31 @@
       WhatsApp: +57 324 5092446<br>
     </p>
     <form>
-      <input type="text" placeholder="Nombre completo" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <input type="tel" placeholder="Teléfono o WhatsApp">
+      <input type="text" placeholder="Nombre completo" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <input type="tel" placeholder="Teléfono o WhatsApp" />
       <textarea rows="5" placeholder="¿En qué puedo ayudarte?"></textarea>
       <button type="submit">Enviar</button>
     </form>
+    <div style="text-align:center; margin-top: 2rem;">
+      <p>Sígueme:</p>
+      <p>
+        Instagram: @vivienda_latorre<br>
+        TikTok: @vivienda_latorre<br>
+        Facebook: <a href="https://www.facebook.com/share/18wV7N55a1/?mibextid=wwXIfr" target="_blank">Vivienda Latorre</a>
+      </p>
+    </div>
   </section>
-
-  <footer>
-    Instagram: @vivienda_latorre |
-    TikTok: @vivienda_latorre |
-    Facebook: <a href="https://www.facebook.com/share/18wV7N55a1/?mibextid=wwXIfr" target="_blank">Vivienda Latorre</a>
-  </footer>
+  <script>
+    let index = 0;
+    function mostrarSiguienteTestimonio() {
+      const testimonios = document.querySelectorAll('.testimonio');
+      testimonios.forEach((t, i) => {
+        t.style.transform = `translateX(-${index * 100}%)`;
+      });
+      index = (index + 1) % testimonios.length;
+    }
+    setInterval(mostrarSiguienteTestimonio, 5000);
+  </script>
 </body>
 </html>
