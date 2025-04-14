@@ -2,23 +2,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vivienda Latorre</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Montserrat', sans-serif; margin: 0; background: #f9f9f9; color: #333; }
-    header { background: #6a1b9a; color: white; text-align: center; padding: 2rem; }
-    header h1 { margin: 0; font-size: 2.5rem; }
-    header p { margin: 0.5rem 0 0; font-size: 1.2rem; }
-    section { padding: 2rem; max-width: 1000px; margin: auto; }
-    .about img { float: left; margin-right: 2rem; border-radius: 50%; width: 150px; height: 150px; object-fit: cover; }
-    .carousel { display: flex; overflow-x: auto; gap: 1rem; scroll-snap-type: x mandatory; }
-    .carousel div { min-width: 300px; scroll-snap-align: start; background: #fff; padding: 1rem; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    form { background: #eee; padding: 2rem; border-radius: 12px; }
-    form input, form textarea { width: 100%; margin-bottom: 1rem; padding: 0.8rem; border: none; border-radius: 8px; }
-    form button { background: #6a1b9a; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; cursor: pointer; }
-    footer { text-align: center; padding: 2rem; background: #4a148c; color: white; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #6a1b9a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .about img {
+      float: left;
+      margin-right: 2rem;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    .services img, .testimonials img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+    .carousel div {
+      min-width: 300px;
+      scroll-snap-align: start;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    form {
+      background: #eee;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 8px;
+    }
+    form button {
+      background-color: #6a1b9a;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #4a148c;
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -28,9 +94,19 @@
   </header>
 
   <section class="about">
-    <img src="images/mi_foto.jpg" alt="Foto personal">
+    <img src="mi_foto.jpg" alt="Foto personal">
     <h2>Sobre mí</h2>
     <p>Soy una experta financiera con más de 10 años de experiencia asesorando a personas en sus inversiones de vivienda. Trabajo como broker independiente multibanco con alianzas en entidades como: Banco Caja Social, Banco AV Villas, Banco de Bogotá, BBVA, ITAU, Banco de Occidente, Credifamilia y Bancolombia.</p>
+  </section>
+
+  <section class="services">
+    <h2>Servicios</h2>
+    <ul>
+      <li><strong>Crédito Hipotecario:</strong> Acompañamiento para adquisición de vivienda. <img src="credito.jpg"></li>
+      <li><strong>Leasing Habitacional:</strong> Alternativa para vivienda nueva o usada. <img src="leasing.jpg"></li>
+      <li><strong>Compra de Cartera:</strong> Mejora tus condiciones financieras. <img src="cartera.jpg"></li>
+      <li><strong>Remodelación y Libre Inversión:</strong> Con garantía hipotecaria. <img src="remodelacion.jpg"></li>
+    </ul>
   </section>
 
   <section class="testimonials">
@@ -47,11 +123,11 @@
   <section class="blog">
     <h2>Tips Financieros</h2>
     <ul>
-      <li>Antes de solicitar un crédito, revisa tu historial crediticio y verifica que esté limpio.</li>
-      <li>Compara tasas de interés, plazos y seguros entre diferentes entidades financieras.</li>
-      <li>Evalúa tus ingresos y egresos para definir tu capacidad real de pago.</li>
-      <li>Procura que la cuota mensual no sobrepase el 30% de tus ingresos.</li>
-      <li>Consulta si puedes acceder a subsidios del gobierno o cajas de compensación.</li>
+      <li>Antes de solicitar un crédito, revisa tu historial crediticio.</li>
+      <li>Compara tasas de interés entre diferentes entidades financieras.</li>
+      <li>Evalúa tus ingresos y egresos para definir tu capacidad de pago.</li>
+      <li>Considera siempre una cuota que te permita vivir cómodamente.</li>
+      <li>Aprovecha las oportunidades de subsidios si aplicas.</li>
     </ul>
   </section>
 
