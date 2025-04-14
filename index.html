@@ -1,118 +1,76 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vivienda Latorre</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', sans-serif; margin: 0; background: #f9f9f9; color: #333; }
+    header { background: #6a1b9a; color: white; text-align: center; padding: 2rem; }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { margin: 0.5rem 0 0; font-size: 1.2rem; }
+    section { padding: 2rem; max-width: 1000px; margin: auto; }
+    .about img { float: left; margin-right: 2rem; border-radius: 50%; width: 150px; height: 150px; object-fit: cover; }
+    .carousel { display: flex; overflow-x: auto; gap: 1rem; scroll-snap-type: x mandatory; }
+    .carousel div { min-width: 300px; scroll-snap-align: start; background: #fff; padding: 1rem; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    form { background: #eee; padding: 2rem; border-radius: 12px; }
+    form input, form textarea { width: 100%; margin-bottom: 1rem; padding: 0.8rem; border: none; border-radius: 8px; }
+    form button { background: #6a1b9a; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 8px; cursor: pointer; }
+    footer { text-align: center; padding: 2rem; background: #4a148c; color: white; }
+  </style>
 </head>
 <body>
   <header>
     <h1>Vivienda Latorre</h1>
-    <p class="slogan">Tu sueño, tu hogar</p>
-    <p>Experta financiera en inversiones de vivienda</p>
-    <a href="#contacto" class="btn">Contáctame</a>
+    <p>Tu sueño, tu hogar</p>
   </header>
 
-  <section id="servicios">
-    <h2>Portafolio de Servicios</h2>
-    <div class="servicio">
-      <img src="https://images.unsplash.com/photo-1600607689458-327d9ac0a48d?auto=format&fit=crop&w=1200&q=80" alt="Crédito Hipotecario"/>
-      <h3>Crédito Hipotecario</h3>
-      <p>Asesoría personalizada para obtener el crédito ideal para tu vivienda nueva o usada.</p>
-    </div>
-    <div class="servicio">
-      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80" alt="Leasing habitacional"/>
-      <h3>Leasing Habitacional</h3>
-      <p>Alternativa sin cuota inicial para adquirir vivienda con ventajas tributarias.</p>
-    </div>
-    <div class="servicio">
-      <img src="https://images.unsplash.com/photo-1588776814546-4c6f2c7db108?auto=format&fit=crop&w=1200&q=80" alt="Compra de Cartera"/>
-      <h3>Compra de Cartera</h3>
-      <p>Unifica tus deudas hipotecarias con mejores tasas y reduce tu cuota mensual.</p>
-    </div>
-    <div class="servicio">
-      <img src="https://images.unsplash.com/photo-1581093588401-16e7c9acdb09?auto=format&fit=crop&w=1200&q=80" alt="Remodelación"/>
-      <h3>Crédito para Remodelación</h3>
-      <p>Haz realidad ese cambio en tu hogar con financiación respaldada por tu propiedad.</p>
-    </div>
-    <div class="servicio">
-      <img src="https://images.unsplash.com/photo-1615874959474-d609969a5a3b?auto=format&fit=crop&w=1200&q=80" alt="Libre inversión con garantía"/>
-      <h3>Libre Inversión con Garantía</h3>
-      <p>Obtén liquidez para tus proyectos personales usando tu vivienda como respaldo.</p>
+  <section class="about">
+    <img src="images/mi_foto.jpg" alt="Foto personal">
+    <h2>Sobre mí</h2>
+    <p>Soy una experta financiera con más de 10 años de experiencia asesorando a personas en sus inversiones de vivienda. Trabajo como broker independiente multibanco con alianzas en entidades como: Banco Caja Social, Banco AV Villas, Banco de Bogotá, BBVA, ITAU, Banco de Occidente, Credifamilia y Bancolombia.</p>
+  </section>
+
+  <section class="testimonials">
+    <h2>Testimonios</h2>
+    <div class="carousel">
+      <div>“Gracias a Vivienda Latorre encontré la mejor opción de crédito para mi hogar.” - Andrés R.</div>
+      <div>“Su asesoría fue clara, confiable y muy profesional.” - Catalina G.</div>
+      <div>“La mejor decisión que pude tomar. ¡Mil gracias!” - Jorge M.</div>
+      <div>“Logré comprar mi apartamento sin complicaciones gracias a su guía.” - Karen P.</div>
+      <div>“Altamente recomendada por su transparencia y compromiso.” - Felipe S.</div>
     </div>
   </section>
 
-  <section id="testimonios">
-    <h2>Lo que dicen mis clientes</h2>
-    <div class="testimonio-carousel">
-      <div class="testimonio">
-        <img src="https://images.unsplash.com/photo-1590080876432-c3b99de0ea64?auto=format&fit=crop&w=80&q=80" alt="Cliente 1"/>
-        <p>"Muy agradecida con Vivienda Latorre. Siempre atenta, clara y con las mejores opciones del mercado."</p>
-        <strong>Mariana L.</strong>
-      </div>
-      <div class="testimonio">
-        <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=80&q=80" alt="Cliente 2"/>
-        <p>"Pude unificar mis deudas y ahora tengo una sola cuota mucho más cómoda. Súper recomendado."</p>
-        <strong>Julián A.</strong>
-      </div>
-      <div class="testimonio">
-        <img src="https://images.unsplash.com/photo-1587496679742-477c2a8c8e78?auto=format&fit=crop&w=80&q=80" alt="Cliente 3"/>
-        <p>"La asesoría fue muy personalizada, me explicaron todo con calma y con ejemplos claros."</p>
-        <strong>Angela M.</strong>
-      </div>
-    </div>
-  </section>
-
-  <section id="blog">
+  <section class="blog">
     <h2>Tips Financieros</h2>
-    <div class="blog-item">
-      <h3>¿Qué es un crédito con garantía hipotecaria?</h3>
-      <p>Es un préstamo con tasas más bajas usando tu propiedad como respaldo. Ideal para montos altos.</p>
-    </div>
-    <div class="blog-item">
-      <h3>¿Es mejor comprar o arrendar?</h3>
-      <p>Si tus planes son a largo plazo, comprar puede ser la mejor opción. Para cambios constantes, arrienda.</p>
-    </div>
-    <div class="blog-item">
-      <h3>Leasing vs. Crédito Hipotecario</h3>
-      <p>Leasing te da ventajas tributarias, el crédito te da propiedad desde el inicio. Evalúa tu perfil.</p>
-    </div>
+    <ul>
+      <li>Antes de solicitar un crédito, revisa tu historial crediticio y verifica que esté limpio.</li>
+      <li>Compara tasas de interés, plazos y seguros entre diferentes entidades financieras.</li>
+      <li>Evalúa tus ingresos y egresos para definir tu capacidad real de pago.</li>
+      <li>Procura que la cuota mensual no sobrepase el 30% de tus ingresos.</li>
+      <li>Consulta si puedes acceder a subsidios del gobierno o cajas de compensación.</li>
+    </ul>
   </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p style="text-align:center;">
-      Email: vivienda.latorre@gmail.com<br>
-      WhatsApp: +57 324 5092446<br>
-    </p>
+  <section class="contact">
+    <h2>Contáctame</h2>
     <form>
-      <input type="text" placeholder="Nombre completo" required />
-      <input type="email" placeholder="Correo electrónico" required />
-      <input type="tel" placeholder="Teléfono o WhatsApp" />
-      <textarea rows="5" placeholder="¿En qué puedo ayudarte?"></textarea>
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="tel" placeholder="Teléfono o WhatsApp">
+      <textarea placeholder="¿En qué te puedo asesorar?" rows="4"></textarea>
       <button type="submit">Enviar</button>
     </form>
-    <div style="text-align:center; margin-top: 2rem;">
-      <p>Sígueme:</p>
-      <p>
-        Instagram: @vivienda_latorre<br>
-        TikTok: @vivienda_latorre<br>
-        Facebook: <a href="https://www.facebook.com/share/18wV7N55a1/?mibextid=wwXIfr" target="_blank">Vivienda Latorre</a>
-      </p>
-    </div>
   </section>
-  <script>
-    let index = 0;
-    function mostrarSiguienteTestimonio() {
-      const testimonios = document.querySelectorAll('.testimonio');
-      testimonios.forEach((t, i) => {
-        t.style.transform = `translateX(-${index * 100}%)`;
-      });
-      index = (index + 1) % testimonios.length;
-    }
-    setInterval(mostrarSiguienteTestimonio, 5000);
-  </script>
+
+  <footer>
+    <p>Email: vivienda.latorre@gmail.com</p>
+    <p>WhatsApp: +57 324 5092446</p>
+    <p>Instagram y TikTok: @vivienda_latorre</p>
+    <p><a href="https://www.facebook.com/share/18wV7N55a1/?mibextid=wwXIfr" style="color: white; text-decoration: underline;">Facebook</a></p>
+  </footer>
 </body>
 </html>
